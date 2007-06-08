@@ -1,0 +1,68 @@
+tapioca-sharp
+------------------------------------------
+This module contains the INdT.Tapioca.dll library which is a convenience 
+library for using Telepathy from client applications. It was created to 
+foster the development of the .NET Instant Messenger Landell.
+
+Runtime requirements:
+  mono-1.2.3.1-2
+  ndesk-dbus-sharp-0.4.2-1
+  telepathy-sharp-0.13.2.1971-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-1
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  cygport-0.3.1-1
+  gawk-3.1.5-4
+  gnome-common-2.18.0-1
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://telepathy.freedesktop.org/wiki/TapiocaSharp
+  http://tapioca-voip.sourceforge.net/wiki/index.php/Tapioca
+
+Canonical download:
+  SVN
+
+-------------------------------------------
+
+Build instructions:
+  unpack tapioca-sharp-0.13.2.1971-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./tapioca-sharp-0.13.2.1971-X.cygport all
+
+This will create:
+  /usr/src/tapioca-sharp-0.13.2.1971-X-src.tar.bz2
+  /usr/src/tapioca-sharp-0.13.2.1971-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/mono/gac/INdT.Tapioca/0.0.0.0__1a14e509ba834353/INdT.Tapioca.dll
+  /usr/lib/mono/gac/INdT.Tapioca/0.0.0.0__1a14e509ba834353/INdT.Tapioca.dll.mdb
+  /usr/lib/mono/tapioca-sharp/INdT.Tapioca.dll
+  /usr/lib/pkgconfig/tapioca-sharp.pc
+  /usr/share/doc/Cygwin/tapioca-sharp-0.13.2.1971.README
+  /usr/share/doc/tapioca-sharp-0.13.2.1971/AUTHORS
+  /usr/share/doc/tapioca-sharp-0.13.2.1971/ChangeLog
+  /usr/share/doc/tapioca-sharp-0.13.2.1971/INSTALL
+  /usr/share/doc/tapioca-sharp-0.13.2.1971/LICENSE
+  /usr/share/doc/tapioca-sharp-0.13.2.1971/README
+
+------------------
+
+Port Notes:
+
+----- version 0.13.2.1971-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

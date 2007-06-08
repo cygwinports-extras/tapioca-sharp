@@ -1,0 +1,7 @@
+category: Dotnet Net
+requires: mono ndesk-dbus-sharp telepathy-sharp
+sdesc: "Tapioca Telepathy .NET client library"
+ldesc: "This module contains the INdT.Tapioca.dll library which is a
+convenience library for using Telepathy from client applications. It
+was created to foster the development of the .NET Instant Messenger
+Landell."
