@@ -1,4 +1,3 @@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/tapioca-sharp/configure.ac src/tapioca-sharp/configure.ac
 --- origsrc/tapioca-sharp/configure.ac	2007-06-08 15:01:00.000000000 -0500
 +++ src/tapioca-sharp/configure.ac	2007-06-08 15:12:41.465371000 -0500
 @@ -17,12 +17,20 @@
@@ -26,7 +25,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  dnl Find Mono and Gmcs
  MONO_REQUIRED_VERSION=1.1.17
  PKG_CHECK_MODULES(MONO_DEPENDENCY, mono >= $MONO_REQUIRED_VERSION, has_mono=true, has_mono=false)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/tapioca-sharp/tapioca/Makefile.am src/tapioca-sharp/tapioca/Makefile.am
 --- origsrc/tapioca-sharp/tapioca/Makefile.am	2007-06-08 15:00:59.000000000 -0500
 +++ src/tapioca-sharp/tapioca/Makefile.am	2007-06-08 15:11:27.261296200 -0500
 @@ -2,8 +2,9 @@
@@ -58,7 +56,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
 +uninstall-local:
 +	echo "$(GACUTIL) /u $(ASSEMBLY_NAME) $(GACUTIL_FLAGS)"; \
 +	$(GACUTIL) /u $(ASSEMBLY_NAME) $(GACUTIL_FLAGS) || exit 1;
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/tapioca-sharp/tapioca-sharp.pc.in src/tapioca-sharp/tapioca-sharp.pc.in
 --- origsrc/tapioca-sharp/tapioca-sharp.pc.in	2007-06-08 15:01:00.000000000 -0500
 +++ src/tapioca-sharp/tapioca-sharp.pc.in	2007-06-08 15:02:48.551531800 -0500
 @@ -7,4 +7,4 @@
@@ -67,7 +64,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -
  Requires: telepathy-sharp
 -Libs: -r:${libdir}/tapioca-sharp/INdT.Tapioca.dll
 +Libs: -r:${libdir}/mono/tapioca-sharp/INdT.Tapioca.dll
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x config.h.in -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in origsrc/tapioca-sharp/tests/Makefile.am src/tapioca-sharp/tests/Makefile.am
 --- origsrc/tapioca-sharp/tests/Makefile.am	2007-06-08 15:00:59.000000000 -0500
 +++ src/tapioca-sharp/tests/Makefile.am	2007-06-08 15:03:50.989831000 -0500
 @@ -22,6 +22,6 @@
